@@ -17,7 +17,6 @@ def scrape():
     try:
       # College Scorecard Data API documentation page is here: https://github.com/RTICWDT/open-data-maker/blob/master/API.md
       url = "https://api.data.gov/ed/collegescorecard/v1/schools.csv?fields=latest&latest.school.state=NY&latest.school.zip__range=" + zip_code + "00.." + zip_code + "99&per_page=500&page=0&api_key=" + api_key
-      # "pandas" documentation page is here: https://pandas.pydata.org/docs/index.html
       frame = pd.read_csv(url)
       frames.append(frame)
     except Exception as e:

@@ -15,6 +15,6 @@ def slugify(value, allow_unicode=False):
     return re.sub(r"[-\s]+", "-", value).strip("-_")
 
 # wrapper currently does nothing
-def grab_data(url, params=None):
-  r = requests.get(url, params)
+def grab_data(url, params=None, headers=None):
+  r = requests.get(url, headers=headers, params=params)
   return r
