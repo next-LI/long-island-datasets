@@ -14,8 +14,11 @@ Scrapes data from several websites.
  - [ ] nyscjc-determinations.py
  - [ ] ntsb-carol.py
  - [ ] nhtsa-fars.py
- - [x] irs-exempt-organizations.py
- - [x] hhs-oig-exclusions.py
+ - [x] irs_exempt_organizations.py
+ - [x] hhs_oig_exclusions.py
+ - [x] fhwa_nbi_arcgis.py
+ - [x] fra_nsrt.py
+ - [x] dol_osha.py
 
 # To-do
  - move all configuration to config.py
